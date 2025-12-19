@@ -1,0 +1,36 @@
+.rightpeople_section {
+  max-height: 399px;
+  height: 100vh;
+  background-image: url("/assets/image/home/right_people_bg.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden; /* ensures no overflow */
+}
+
+
+/* WHITE BORDER SHAPE */
+.rightpeople_section::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 454px; 
+  height: 100%;
+  background-color: #ffffff; 
+  border-radius: 260px 0 0 260px; /* top-left, top-right, bottom-right, bottom-left */
+  z-index: 1;
+}
+
+/* YELLOW SHAPE */
+.rightpeople_section::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 430px;
+  height: 100%;
+  background-color: #fcdb5a; 
+  border-radius: 260px 0 0 260px; 
+  z-index: 2;
+}

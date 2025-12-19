@@ -1,0 +1,23 @@
+.our {
+  font-family: var(--font-bebas), sans-serif;
+  position: absolute;
+  bottom: 56px;
+  left: 100px;
+  font-weight: 400; /* font-normal */
+  font-size: 176px;
+  color: var(--foreground); /* text-foreground */
+  max-width: 216px;
+  width: 100%;
+}
+
+.expert {
+  font-family: var(--font-bebas), sans-serif;
+  position: absolute;
+  bottom: 56px;
+  right: 168px;
+  font-weight: 400; /* font-normal */
+  font-size: 176px;
+  color: var(--foreground); /* text-foreground */
+  max-width: 470px;
+  width: 100%;
+}

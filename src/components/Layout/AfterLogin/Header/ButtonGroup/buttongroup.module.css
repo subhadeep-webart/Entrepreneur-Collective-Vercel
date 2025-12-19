@@ -1,0 +1,7 @@
+.button_group_container{
+    max-width: 153px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

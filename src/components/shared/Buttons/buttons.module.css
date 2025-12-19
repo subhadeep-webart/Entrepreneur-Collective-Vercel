@@ -1,0 +1,30 @@
+.profile_button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--cool-gray);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wider border with top-right gap */
+.profile_button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+
+  /* Increase red border size by shrinking inner transparent circle */
+  background: conic-gradient(
+    from 35deg,        /* gap starts at top-right */
+    transparent 0deg 50deg,  /* smaller transparent gap = bigger visible red */
+    var(--coral-red) 60deg 360deg
+  );
+
+  /* Cut out center to form border */
+  mask: radial-gradient(circle, transparent 55%, black 56%);
+  -webkit-mask: radial-gradient(circle, transparent 55%, black 56%);
+}

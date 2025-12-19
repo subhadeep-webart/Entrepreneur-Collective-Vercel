@@ -1,0 +1,113 @@
+@import "tailwindcss";
+@plugin '../hero.js';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+:root {
+  --background: #fafbec;
+  --foreground: #000000;
+  --primary: #ffa310;
+  --almost-black: #252525;
+  --dark-gray: #a9a9a9;
+  --neutral-gray: #c9c9c9;
+  --mustard-yellow: #fcdb5a;
+  --charcoal: #3f3f3f;
+  --light-gray: #bcbbbb;
+  --medium-gray: #676767;
+  --secondary: #c3c3c3;
+  --info: #919191;
+  --link: #0055b8;
+  --graphite-gray: #4e4e4e;
+  --gunmetal-gray: #323232;
+  --slate-gray: #7e7e7e;
+  --soft-black: #181818;
+  --greige: #b5b0ab;
+  --rich-black: #101010;
+  --off-white: #ededed;
+  --golden-yellow: #f9c638;
+  --coral-red:#FD4F38;
+  --cool-gray:#D7D6D6;
+
+  --form-text: #292929;
+  --dark-slate: #474747;
+  --gray-muted: #9d9d9d;
+  --otp-border: #8b8b8b;
+  --mauve-gray: #bbb6b7;
+  --silver-gray: #b1b1b1;
+  --ash-gray: #929292;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+@utility container {
+  margin-inline: auto !important;
+  padding-inline: 1rem !important;
+  max-width: var(--container-max, 1320px);
+}
+
+@theme {
+  /* --font-bebas: var(--font-bebas); */
+
+  --container-max: 1320px;
+  --breakpoint-sm: 540px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1140px;
+  --breakpoint-2xl: 1320px;
+
+  /* Color for the secondary dange etc listed here */
+  --color-primary: var(--primary);
+  --color-almost-black: var(--almost-black);
+  --color-dark-gray: var(--dark-gray);
+  --color-neutral-gray: var(--neutral-gray);
+  --color-mustard-yellow: var(--mustard-yellow);
+  --color-charcoal: var(--charcoal);
+  --color-light-gray: var(--light-gray);
+  --color-medium-gray: var(--medium-gray);
+  --color-secondary: var(--secondary);
+  --color-info: var(--info);
+  --color-link: var(--link);
+  --color-graphite-gray: var(--graphite-gray);
+  --color-gunmetal-gray: var(--gunmetal-gray);
+  --color-slate-gray: var(--slate-gray);
+  --color-soft-black: var(--soft-black);
+  --color-greige: var(--greige);
+  --color-rich-black: var(--rich-black);
+  --color-off-white: var(--off-white);
+  --color-golden-yellow: var(--golden-yellow);
+  --color-coral-red:var(--coral-red);
+  --color-cool-gray:var(--cool-gray);
+
+  /* All Other Color listed here */
+  --color-form-text: var(--form-text);
+  --color-otp-border: var(----otp-border);
+  --color-gray-muted: var(--gray-muted);
+  --color-dark-slate: var(--dark-slate);
+  --color-mauve-gray: var(--mauve-gray);
+  --color-silver-gray: var(--silver-gray);
+  --color-ash-gray: var(--ash-gray);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-poppins), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,10 @@
+.auth_container {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    background-image: url("/assets/image/banner_bg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
