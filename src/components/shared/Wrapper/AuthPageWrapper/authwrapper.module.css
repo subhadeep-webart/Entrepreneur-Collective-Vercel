@@ -6,5 +6,6 @@
     background-image: url("/assets/image/banner_bg.png");
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    max-height: 919px;
 }

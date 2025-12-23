@@ -1,11 +1,21 @@
-import CommonCardWrapper from "@/components/shared/Wrapper/CardWrapper/CommonCardWrapper";
-import PostDetails from "./PostDetails";
+import CardComponent from "../CardComponent";
+import PostMedia from "./PostMedia";
+import PostMetricSection from "./PostMetricSection";
+import PostUserDetails from "./PostUserDetails";
 
-const PostCardDisplay=()=>{
-    return(
-        <CommonCardWrapper>
-            <PostDetails/>
-        </CommonCardWrapper>
+const PostCardDisplay = () => {
+    return (
+        <CardComponent>
+            <CardComponent.Header className={"flex-col"}>
+                <PostUserDetails />
+            </CardComponent.Header>
+            <CardComponent.Body>
+                <PostMedia />
+            </CardComponent.Body>
+            <CardComponent.Footer>
+                <PostMetricSection/>
+            </CardComponent.Footer>
+        </CardComponent>
     )
 }
 

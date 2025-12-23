@@ -9,6 +9,7 @@ const CustomButton = ({
     className = "",
     variant = "solid",
     type = "button",
+    isIconOnly = false
 }) => {
     return (
         <Button
@@ -18,6 +19,7 @@ const CustomButton = ({
             className={cn("bg-primary rounded-none min-h-10 h-10 min-w-10 w-10 text-black text-base font-medium", className)}
             onPress={clickHandler}
             variant={variant}
+            isIconOnly={isIconOnly}
         >
             {children}
         </Button>

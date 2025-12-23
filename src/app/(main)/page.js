@@ -1,6 +1,7 @@
 "use client";
 
-import Banner from "@/components/Banner";
+import Banner from "@/components/Banner/BannerWrapper";
+import HomePageBanner from "@/components/Banner/HomePageBanner";
 import BrandsSection from "@/components/Home/BrandsSection";
 import ConnectPeopleSection from "@/components/Home/ConnectPeopleSection";
 import HomeAboutUs from "@/components/Home/HomeAboutUs";
@@ -11,7 +12,7 @@ import RightPeopleSection from "@/components/Home/RightPeopleSection";
 export default function Home() {
   return (
     <>
-      <Banner />
+      <HomePageBanner/>
       <HomeAboutUs/>
       <RightPeopleSection/>
       <OurExpertsSection/>

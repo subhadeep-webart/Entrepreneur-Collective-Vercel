@@ -1,0 +1,24 @@
+.header_section {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 40;
+    background: white;
+    /* backdrop-filter: blur(15px); */
+    transform: translateY(0);
+    width: 100%;
+    height: 64px;
+    transition: all 0.3s ease-in-out;
+}
+
+.header_menu_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

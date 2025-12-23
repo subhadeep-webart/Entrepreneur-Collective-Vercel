@@ -1,0 +1,6 @@
+.background_image{
+    background-image: url('/assets/image/features/question_and_answer_background_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

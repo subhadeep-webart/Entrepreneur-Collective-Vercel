@@ -24,8 +24,13 @@
   --rich-black: #101010;
   --off-white: #ededed;
   --golden-yellow: #f9c638;
-  --coral-red:#FD4F38;
-  --cool-gray:#D7D6D6;
+  --coral-red: #FD4F38;
+  --cool-gray: #D7D6D6;
+  --granite-gray: #727272;
+  --dim-gray:#5F5F5F;
+  --granite-gray:#727272;
+  --jet2-gray:#272727;
+  --amber:#FFB027;
 
   --form-text: #292929;
   --dark-slate: #474747;
@@ -34,6 +39,11 @@
   --mauve-gray: #bbb6b7;
   --silver-gray: #b1b1b1;
   --ash-gray: #929292;
+  --light-gray: #BFBFBF;
+  --jet-gray: #303030;
+  --smoky-black: #2D2926;
+  --cool-gray: #ADADAD;
+  --almost-gray: #2B2B2B;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -59,6 +69,10 @@
   --breakpoint-xl: 1140px;
   --breakpoint-2xl: 1320px;
 
+  /*Font Declration*/
+  --text-hero: 60px;
+  --text-xxs: 10px;
+
   /* Color for the secondary dange etc listed here */
   --color-primary: var(--primary);
   --color-almost-black: var(--almost-black);
@@ -79,17 +93,26 @@
   --color-rich-black: var(--rich-black);
   --color-off-white: var(--off-white);
   --color-golden-yellow: var(--golden-yellow);
-  --color-coral-red:var(--coral-red);
-  --color-cool-gray:var(--cool-gray);
+  --color-coral-red: var(--coral-red);
+  --color-cool-gray: var(--cool-gray);
+  --color-dim-gray: var(--dim-gray);
+  --color-granite-gray: var(--granite-gray);
+  --color-jet2-gray: var(--jet2-gray);
+  --color-amber: var(--amber);
 
   /* All Other Color listed here */
   --color-form-text: var(--form-text);
-  --color-otp-border: var(----otp-border);
+  --color-otp-border: var(--otp-border);
   --color-gray-muted: var(--gray-muted);
   --color-dark-slate: var(--dark-slate);
   --color-mauve-gray: var(--mauve-gray);
   --color-silver-gray: var(--silver-gray);
   --color-ash-gray: var(--ash-gray);
+  --color-light-gray: var(--light-gray);
+  --color-jet-gray: var(--jet-gray);
+  --color-smoky-black: var(--smoky-black);
+  --color-cool-gray: var(--cool-gray);
+  --color-almost-gray: var(--almost-gray);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -110,4 +133,18 @@ body {
   font-family: var(--font-poppins), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.inner_page_section_padding {
+  padding-block: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.after_login_page_section_padding {
+  padding-block: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
