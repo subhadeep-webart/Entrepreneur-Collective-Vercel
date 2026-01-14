@@ -2,12 +2,12 @@ import CardComponent from "@/components/ui/Cards/CardComponent";
 import Image from "next/image";
 import { Icons, PUBLIC_IMAGES } from "@/assets";
 import LinkButton from "@/components/ui/Buttons/LinkButton";
-import ArticleDescription from "./ArticleDescription";
 import IconCard from "@/components/shared/Cards/IconCard";
+import DescriptionCard from "@/components/shared/Cards/DescriptionCard";
 
 const ResourceArticleCard = () => {
   return (
-    <CardComponent className="!px-0 !py-0 border-none bg-transparent gap-0">
+    <CardComponent className="!px-0 !py-0 border-none bg-transparent gap-0 items-start">
       <CardComponent.Header>
         <div className="relative w-[735px] h-[392px] border border-neutral-gray">
           <Image
@@ -19,7 +19,7 @@ const ResourceArticleCard = () => {
         </div>
       </CardComponent.Header>
       <CardComponent.Body className="!pt-8 !pb-5">
-        <ArticleDescription
+        <DescriptionCard
           title=" Mauris a sem cursus, placerat urna quis, sodales ligula. Curabitur
             eleifend purus et felis."
           description="Phasellus vitae risus egestas, varius tellus at, dignissim lectus.
@@ -56,7 +56,7 @@ const ResourceArticleCard = () => {
           </div>
         </div>
         <LinkButton
-          href="#"
+          href="/resource-details"
           className="bg-transparent border border-foreground text-sm font-medium text-foreground h-12 min-w-[185px] w-[185px] !mt-7"
         >
           View details

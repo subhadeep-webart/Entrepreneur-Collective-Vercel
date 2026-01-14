@@ -1,0 +1,19 @@
+.why-choose-swiper .swiper-wrapper {
+    padding-block: 40px;
+}
+
+.why-choose-swiper .swiper-slide {
+    width: 320px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    transform: scale(0.9);
+}
+
+.why-choose-swiper .swiper-slide-active {
+    transform: scale(1.1) !important;
+    opacity: 1;
+}
+
+.why-choose-swiper .swiper-pagination {
+    bottom: -30px !important;
+}

@@ -8,7 +8,7 @@ const OtpVerificationForm = () => {
     const router = useRouter();
 
     const handleVerifyOtp = () => {
-        router.push("/en/login");
+        router.push("/feed");
     };
     return (
         <form className={styles.otp_form_container}>

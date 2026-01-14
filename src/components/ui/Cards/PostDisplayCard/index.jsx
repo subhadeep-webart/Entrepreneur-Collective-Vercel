@@ -13,7 +13,7 @@ const PostCardDisplay = () => {
                 <PostMedia />
             </CardComponent.Body>
             <CardComponent.Footer>
-                <PostMetricSection/>
+                <PostMetricSection />
             </CardComponent.Footer>
         </CardComponent>
     )

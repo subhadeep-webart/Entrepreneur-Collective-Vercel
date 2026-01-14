@@ -1,0 +1,18 @@
+.choose_us_section_container {
+    width: 100%;
+    position: relative;
+    /* required for pseudo-elements */
+}
+
+/* Top image */
+.choose_us_section_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    background-image: url("/assets/image/about-us/double_quote.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

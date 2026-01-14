@@ -3,6 +3,7 @@ import CreateCommunityButton from "@/components/shared/Buttons/CreateCommunityBu
 import CommunityCard from "@/components/shared/Cards/CommunityCard";
 import ConnectionCard from "@/components/shared/Cards/ConnectionCard";
 import SectionHeader from "@/components/shared/Section/SectionHeader";
+import CreateCommunityModal from "../CreateCommunityModal";
 
 const MyCommunitySectionContainer = ({ headerText = "My community" }) => {
     return (
@@ -12,7 +13,8 @@ const MyCommunitySectionContainer = ({ headerText = "My community" }) => {
                     {headerText}
                 </SectionHeader.LeftContainer>
                 <SectionHeader.RightContainer>
-                    <CreateCommunityButton />
+                    {/* <CreateCommunityButton /> */}
+                    <CreateCommunityModal/>
                 </SectionHeader.RightContainer>
             </SectionHeader>
             <div className="grid grid-cols-4 gap-7">

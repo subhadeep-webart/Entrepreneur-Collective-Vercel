@@ -4,7 +4,7 @@ import LinkButton from "@/components/ui/Buttons/LinkButton";
 
 const ReachUsForm = () => {
   return (
-    <div className="min-w-[648px] w-full border border-graphite-gray bg-almost-black !px-12 !py-10">
+    <div className="w-full border border-graphite-gray bg-almost-black !px-12 !py-10">
       <div className="flex flex-col gap-5 !mb-10">
         <FormInput placeholder="Full name" type="text" />
         <FormInput placeholder="Email" type="email" />

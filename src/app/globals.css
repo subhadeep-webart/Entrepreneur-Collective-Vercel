@@ -6,6 +6,7 @@
   --background: #fafbec;
   --foreground: #000000;
   --primary: #ffa310;
+  --success: #35855F;
   --almost-black: #252525;
   --dark-gray: #a9a9a9;
   --neutral-gray: #c9c9c9;
@@ -27,10 +28,13 @@
   --coral-red: #FD4F38;
   --cool-gray: #D7D6D6;
   --granite-gray: #727272;
-  --dim-gray:#5F5F5F;
-  --granite-gray:#727272;
-  --jet2-gray:#272727;
-  --amber:#FFB027;
+  --dim-gray: #5F5F5F;
+  --granite-gray: #727272;
+  --jet2-gray: #272727;
+  --amber: #FFB027;
+  --dim-gray-2: #575454;
+  --light-charcoal: #3D3D3D;
+  --blush-pink: #F6AEAE;
 
   --form-text: #292929;
   --dark-slate: #474747;
@@ -44,6 +48,24 @@
   --smoky-black: #2D2926;
   --cool-gray: #ADADAD;
   --almost-gray: #2B2B2B;
+  --soft-black: #4B4B4B;
+  --iron-gray: #414141;
+  --dark-neutral-gray: #4A4A4A;
+  --cool-shadow-gray: #878787;
+  --very-light-gray: #E0E0E0;
+  --variant-gray: #4D4D4D;
+  --silver-gray-lite: #C5C5C5;
+  --off-white: #F6F6F6;
+  --balanced-gray: #989898;
+  --off-white-gray: #E8E8E8;
+  --gray-500: #BEBEBE;
+  --bright-orange: #FF9D00;
+  --ash-charcoal: #505050;
+  --beige: #EEEBE5;
+  --medium-light-gray: #9A9A9A;
+  --neutral-light-gray: #C4C4C4;
+  --gainsboro: #D9D9D9;
+  --oynx: #292929
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -99,6 +121,9 @@
   --color-granite-gray: var(--granite-gray);
   --color-jet2-gray: var(--jet2-gray);
   --color-amber: var(--amber);
+  --color-dim-gray-2: var(--dim-gray-2);
+  --color-light-charcoal: var(--light-charcoal);
+  --color-blush-pink: var(--blush-pink);
 
   /* All Other Color listed here */
   --color-form-text: var(--form-text);
@@ -113,6 +138,24 @@
   --color-smoky-black: var(--smoky-black);
   --color-cool-gray: var(--cool-gray);
   --color-almost-gray: var(--almost-gray);
+  --color-soft-black: var(--soft-black);
+  --color-dark-neutral-gray: var(--dark-neutral-gray);
+  --color-cool-shadow-gray: var(--cool-shadow-gray);
+  --color-very-light-gray: var(--very-light-gray);
+  --color-variant-gray: var(--variant-gray);
+  --color-off-white: var(--off-white);
+  --color-silver-gray-lite: var(--silver-gray-lite);
+  --color-balanced-gray: var(--balanced-gray);
+  --color-off-white-gray: var(--off-white-gray);
+  --color-gray-500: var(--gray-500);
+  --color-bright-orange: var(--bright-orange);
+  --color-ash-charcoal: var(--ash-charcoal);
+  --color-biege: var(--biege);
+  --color-medium-light-gray: var(--medium-light-gray);
+  --color-neutral-light-gray: var(--neutral-light-gray);
+  --color-beige: var(--beige);
+  --color-gainsboro: var(--gainsboro);
+  --color-oynx: var(--oynx);
 }
 
 /* @media (prefers-color-scheme: dark) {

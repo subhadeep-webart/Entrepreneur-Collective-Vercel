@@ -25,22 +25,30 @@
     /* mix-blend-mode: screen; */
 }
 
-@media (max-width: 1660px) {
+.banner_image {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    height: 450px;
+}
+
+@media (max-width: 480px) {
+    .banner{
+        height: 250px;
+    }
+
     .banner_text {
         letter-spacing: 5px;
         z-index: 4;
-        font-size: 200px;
+        font-size: 100px;
         font-weight: 400;
         line-height: 0.8;
         position: absolute;
         top: -7%;
         left: 50%;
     }
-}
 
-.banner_image {
-    position: relative;
-    width: 100%;
-    z-index: 2;
-    height: 450px;
+    .banner_image {
+        height: 250px;
+    }
 }

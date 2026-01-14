@@ -1,3 +1,4 @@
+import CustomButton from "../../Buttons/CustomButton";
 import CardComponent from "../../Cards/CardComponent";
 import LeftContainer from "./LeftContainer";
 import RightContainer from "./RightContainer";

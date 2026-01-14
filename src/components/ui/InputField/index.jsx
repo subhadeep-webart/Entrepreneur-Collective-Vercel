@@ -9,18 +9,16 @@ const InputField = ({
   type = "",
   label = "",
   placeholder = "",
-  classNames = {}
+  classNames = {},
+  isTime = false,
+  isDate = false,
+  startIcon = null,
 }) => {
   const [showPassword, setShowPassword] = useState(false);
   const isPassword = type === "password";
 
   const defaultClassNames = {
-    label: [
-      "font-semibold",
-      "text-base",
-      "text-black",
-      "mb-2",
-    ],
+    label: ["font-semibold", "text-base", "text-black", "mb-2"],
 
     inputWrapper: [
       "bg-transparent",
@@ -68,20 +66,32 @@ const InputField = ({
       type={isPassword && showPassword ? "text" : type}
       placeholder={placeholder}
       classNames={mergedClassNames}
-      endContent={
-        isPassword && (
-          <button
-            type="button"
-            onClick={() => setShowPassword(!showPassword)}
-            className="focus:outline-none"
-          >
-            {showPassword ? (
-              <Icons.EyeOff className="text-[#222222]" size={18} />
-            ) : (
-              <Icons.Eye className="text-[#222222]" size={18} />
-            )}
-          </button>
+      startContent={
+        startIcon && (
+          <span className="text-[#222222] flex items-center !pl-2">{startIcon}</span>
         )
+      }
+      endContent={
+        <>
+          {isPassword && (
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="focus:outline-none"
+            >
+              {showPassword ? (
+                <Icons.EyeOff className="text-[#222222]" size={18} />
+              ) : (
+                <Icons.Eye className="text-[#222222]" size={18} />
+              )}
+            </button>
+          )}
+
+          {isTime && <Icons.Clock className="text-[#222222]" size={18} />}
+          {isDate && (
+            <Icons.CalendarDays className="text-[#222222]" size={18} />
+          )}
+        </>
       }
     />
   );

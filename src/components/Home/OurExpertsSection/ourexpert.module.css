@@ -3,9 +3,9 @@
   position: absolute;
   bottom: 56px;
   left: 100px;
-  font-weight: 400; /* font-normal */
+  font-weight: 400;
   font-size: 176px;
-  color: var(--foreground); /* text-foreground */
+  color: var(--foreground);
   max-width: 216px;
   width: 100%;
 }
@@ -15,9 +15,22 @@
   position: absolute;
   bottom: 56px;
   right: 168px;
-  font-weight: 400; /* font-normal */
+  font-weight: 400;
+  /* font-normal */
   font-size: 176px;
-  color: var(--foreground); /* text-foreground */
+  color: var(--foreground);
+  /* text-foreground */
   max-width: 470px;
   width: 100%;
+}
+
+/* Hide on screens smaller than 480px */
+@media (max-width: 480px) {
+  .our {
+    display: none;
+  }
+
+  .expert {
+    display: none;
+  }
 }

@@ -1,8 +1,16 @@
 .header {
   font-family: var(--font-bebas), sans-serif;
-  font-weight: 400; /* font-normal */
+  font-weight: 400;
+  /* font-normal */
   font-size: 176px;
   line-height: 80%;
   color: var(--foreground);
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 36px;
+    line-height: 100%;
+  }
 }

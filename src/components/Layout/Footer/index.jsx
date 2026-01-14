@@ -2,15 +2,16 @@ import { Icons, PUBLIC_IMAGES } from "@/assets";
 import FormInput from "@/components/Home/ReachUsSection/FormInput";
 import LinkButton from "@/components/ui/Buttons/LinkButton";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-soft-black !pt-14">
+    <footer className="bg-soft-black">
       <section className="container">
-        <div className="grid grid-cols-12">
-          <div className="col-span-4">
-            <div className="!space-y-7">
-              <div className="w-[197px] h-[50px] relative">
+        <div className="grid grid-cols-12 !py-6">
+          <div className="col-span-12 lg:col-span-4">
+            <div className="!space-y-2 lg:!space-y-7">
+              <div className="w-[160px] lg:w-[197px] h-[36px] lg:h-[50px] relative">
                 <Image
                   src={PUBLIC_IMAGES.Logo}
                   alt="Website Logo"
@@ -18,37 +19,47 @@ const Footer = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <p className="font-normal text-sm text-white max-w-[286px]">
+              <p className="font-normal text-xs lg:text-sm text-white max-w-[286px]">
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
                 posuere cubilia curae; Etiam mattis dui vel placerat lacinia.
               </p>
             </div>
           </div>
 
-          <div className="col-span-2 !pt-3">
-            <h4 className="font-bold text-lg text-white !mb-3">Useful Links</h4>
-            <ul className="font-normal text-sm !space-y-2 text-white">
-              <li>Home</li>
+          <div className="col-span-6 lg:col-span-2 !pt-3">
+            <h4 className="font-semibold lg:font-bold text-sm lg:text-lg text-white !mb-3">
+              Useful Links
+            </h4>
+            <ul className="font-normal !space-y-2 text-white text-xs lg:text-sm">
+              <li>
+                <Link href={"/"}>Home</Link>
+              </li>
               <li>People</li>
               <li>Master classes</li>
-              <li>About us</li>
-              <li>Contact</li>
+              <li>
+                <Link href={"/about-us"}>About us</Link>
+              </li>
+              <li>
+                <Link href={"/contact-us"}>Contact</Link>
+              </li>
             </ul>
           </div>
 
-          <div className="col-span-3 !pt-3">
-            <h4 className="font-bold text-lg text-white !mb-3.5">Legal</h4>
-            <ul className="font-normal text-sm !space-y-3 text-white">
+          <div className="col-span-6 lg:col-span-3 !pt-3">
+            <h4 className="font-semibold lg:font-bold text-sm lg:text-lg text-white !mb-3">
+              Legal
+            </h4>
+            <ul className="font-normal !space-y-2 text-white text-xs lg:text-sm">
               <li>Terms of Condition</li>
               <li>Privacy Policy</li>
             </ul>
           </div>
 
-          <div className="col-span-3 !pt-3">
-            <h4 className="font-bold text-lg text-white !mb-7">
+          <div className="col-span-12 lg:col-span-3 !py-4 flex flex-col gap-3 lg:gap-7">
+            <h4 className="font-semibold lg:font-bold text-sm lg:text-lg text-white">
               Sign up for exclusive updates
             </h4>
-            <div className="flex !mb-9">
+            <div className="flex w-full">
               <FormInput
                 placeholder="Email"
                 type="email"
@@ -69,12 +80,12 @@ const Footer = () => {
                     "!text-white font-normal !pl-[18px]",
                     "placeholder:text-white placeholder:font-normal placeholder:text-[13px]",
                   ],
-                  base: "w-36",
+                  base: "w-fit lg:w-36",
                 }}
               />
               <LinkButton
                 href="#"
-                className="w-36 h-12 font-semibold text-sm text-foreground"
+                className="w-30 lg:w-36 h-12 font-normal lg:font-semibold text-xs lg:text-sm text-foreground text-nowrap"
               >
                 Subscribe Now!
               </LinkButton>

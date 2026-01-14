@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./afterloginnavbar.module.css";
 import { AFTER_LOGIN_HEADER_MENU } from "@/contants/layout_constant";
+import NotificationDropdown from "@/components/ui/Dropdowns/NotificationDropdown";
 
 const AfterLoginNavbarMenu = () => {
   const pathname = usePathname();
@@ -12,6 +13,13 @@ const AfterLoginNavbarMenu = () => {
     <ul className={styles.navbar_list}>
       {AFTER_LOGIN_HEADER_MENU.map((item) => {
         const isActive = pathname === item.href;
+
+        if (item.id === "notifications") {
+          return <li
+            key={item.id}
+            className={isActive ? styles.active : ""}
+          ><NotificationDropdown key={item.id} /></li>
+        }
 
         return (
           <li

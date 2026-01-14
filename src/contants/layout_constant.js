@@ -35,12 +35,12 @@ export const AFTER_LOGIN_HEADER_MENU = [
   },
   {
     id: "profile",
-    href: "#",
+    href: "/profile",
     icon: <Icons.ManIcon />,
   },
   {
     id: "groups",
-    href: "#",
+    href: "/my-communities",
     icon: <Icons.GroupIcon />,
   },
   {
@@ -55,7 +55,7 @@ export const AFTER_LOGIN_HEADER_MENU = [
   },
   {
     id: "media",
-    href: "#",
+    href: "/workshops",
     icon: <Icons.MonitorPlay />,
   },
 ];
@@ -67,9 +67,6 @@ export const INNER_PAGE_HEADER = {
       headerText: "",
       subText: "",
     }
-  },
-  "contact-us": {
-
   },
   "features": {
     headerText: "FEATURES",
