@@ -38,6 +38,7 @@ const ProfileDropdown = () => {
                     classNames={{
                         base: "!py-4 !rounded-none !px-2",
                     }}
+                    href="/"
                 >
                     Sign Out
                 </DropdownItem>
