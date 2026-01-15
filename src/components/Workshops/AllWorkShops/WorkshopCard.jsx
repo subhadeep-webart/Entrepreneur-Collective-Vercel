@@ -60,7 +60,7 @@ const WorkshopCard = () => {
       </CardComponent.Body>
       <CardComponent.Footer className="!px-16 !py-9">
         <LinkButton
-          href="#"
+          href="/workshop-details"
           className="bg-transparent border border-foreground text-xs font-medium text-foreground h-8 min-w-[183px] w-[183px] "
         >
           View details
