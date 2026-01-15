@@ -2,45 +2,32 @@
   position: relative;
   width: 100%;
   max-width: 762px;
-  /* aspect-ratio: 762 / 490; */
+  height: 490px;
   /* margin: auto; */
 }
 
-/* Responsive banner text */
 .banner_text {
   position: absolute;
   top: -6%;
-  left: 50%;
+  left: 37%;
   transform: translateX(-50%);
-
-  font-size: clamp(80px, 20vw, 200px);
+  font-size: 250px;
   font-weight: 400;
-
   color: transparent;
-  -webkit-text-stroke: clamp(1px, 0.3vw, 2px) white;
+  text-stroke: 2px white;
+  -webkit-text-stroke: 2px white;
   -webkit-text-fill-color: rgba(0, 0, 0, 0.4);
-
-  letter-spacing: clamp(2px, 1vw, 10px);
+  letter-spacing: 10px;
   line-height: 1;
   z-index: 4;
-  text-align: center;
-
+  /* white-space: nowrap; */
   font-family: var(--font-bebas), sans-serif;
-  white-space: nowrap;
+  /* mix-blend-mode: screen; */
 }
 
-/* Responsive image */
 .banner_image {
+  position: relative;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   z-index: 2;
-}
-
-@media (max-width: 480px) {
-  .banner_text {
-    top: -2%;
-    font-size: clamp(80px, 18vw, 160px);
-    letter-spacing: 3px;
-  }
+  height: 490px;
 }
