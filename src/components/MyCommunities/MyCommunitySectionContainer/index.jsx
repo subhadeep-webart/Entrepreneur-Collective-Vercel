@@ -14,20 +14,22 @@ const MyCommunitySectionContainer = ({ headerText = "My community" }) => {
                 </SectionHeader.LeftContainer>
                 <SectionHeader.RightContainer>
                     {/* <CreateCommunityButton /> */}
-                    <CreateCommunityModal/>
+                    <CreateCommunityModal />
                 </SectionHeader.RightContainer>
             </SectionHeader>
             <div className="grid grid-cols-4 gap-7">
-               <CommunityCard/>
-               <CommunityCard/>
-               <CommunityCard/>
-               <CommunityCard/>
-               <CommunityCard/>
-               <CommunityCard/>
-               <CommunityCard/>
-               <CommunityCard/>
-               <CommunityCard/>
-               <CommunityCard/>
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
+                <CommunityCard />
             </div>
         </div>
     )

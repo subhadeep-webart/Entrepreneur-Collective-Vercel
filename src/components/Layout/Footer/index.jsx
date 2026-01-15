@@ -91,9 +91,9 @@ const Footer = () => {
               </LinkButton>
             </div>
             <div className="flex gap-4">
-              <Icons.FacebookIcon />
-              <Icons.InstagramIcon />
-              <Icons.YoutubeIcon />
+              <button className="cursor-pointer"><Icons.FacebookIcon /></button>
+              <button className="cursor-pointer"><Icons.InstagramIcon /></button>
+              <button className="cursor-pointer"><Icons.YoutubeIcon /></button>
             </div>
           </div>
         </div>

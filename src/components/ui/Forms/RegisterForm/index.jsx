@@ -19,9 +19,9 @@ const RegisterForm = () => {
                 <CustomButton className="w-48 h-14">
                     Login
                 </CustomButton>
-                <LinkButton href={"/forgot-pssword"} className={"text-link w-36 font-bold text-sm bg-transparent"}>
+                {/* <LinkButton href={"/forgot-pssword"} className={"text-link w-36 font-bold text-sm bg-transparent"}>
                     Forgot password ?
-                </LinkButton>
+                </LinkButton> */}
             </div>
             <div className="flex w-full flex-col gap-7">
                 <FormFooter isLoginPage={false} />
