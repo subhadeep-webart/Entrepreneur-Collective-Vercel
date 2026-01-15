@@ -11,7 +11,7 @@ const WorkshopDetailsContainer = () => {
         Workshops
       </h2>
        <LinkButton
-        href="#"
+        href="/create-workshop"
         className="text-base font-medium text-foreground h-11 w-[310px]"
       >
         Edit workshop
