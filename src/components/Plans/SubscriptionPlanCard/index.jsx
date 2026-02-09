@@ -1,5 +1,6 @@
 import { Icons } from "@/assets";
 import CustomButton from "@/components/ui/Buttons/CustomButton";
+import LinkButton from "@/components/ui/Buttons/LinkButton";
 import CardComponent from "@/components/ui/Cards/CardComponent";
 import { cn } from "@heroui/react";
 
@@ -10,10 +11,10 @@ const SubscriptionPlanCard = ({ planDetails }) => {
             <CardComponent.Header className={cn("text-[22px] text-white font-semibold flex justify-center items-center !py-5 uppercase", planDetails?.isPremium ? "bg-bright-orange" : "bg-coral-red")}>
                 {planDetails?.name}
             </CardComponent.Header>
-            <CardComponent.Body className={"!px-2 h-[409px]"}>
+            <CardComponent.Body className={"!px-2 h-[409px] flex flex-col gap-10"}>
                 {
                     planDetails?.features.map((feature, index) => (
-                        <div key={feature.id ?? index} className="w-full flex gap-1 items-center">
+                        <div key={feature.id ?? index} className="w-full flex gap-1 items-center !pl-4">
                             <Icons.CircleCheck size={17} fill="#35855f" color="white" />
                             <p className="text-black text-base font-normal">
                                 {feature?.name}
@@ -27,9 +28,9 @@ const SubscriptionPlanCard = ({ planDetails }) => {
                     <p className="text-smoky-black text-lg font-medium">Price</p>
                     <h3 className="text-[32px] font-bold text-smoky-black">$ {planDetails?.price}</h3>
                 </div>
-                <CustomButton className="w-48">
+                <LinkButton className="w-48" href={"/thank-you"}>
                     Upgrade now
-                </CustomButton>
+                </LinkButton>
             </CardComponent.Footer>
         </CardComponent>
     )

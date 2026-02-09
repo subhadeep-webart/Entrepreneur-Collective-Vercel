@@ -26,7 +26,7 @@ const AddYourServiceModal = () => {
     <>
       <button
         onClick={onOpen}
-        className="w-[70px] h-[70px] rounded-full flex justify-center items-center bg-off-white border-2 border-silver-gray-lite"
+        className="w-[70px] h-[70px] rounded-full flex justify-center items-center bg-off-white border-2 border-silver-gray-lite cursor-pointer"
       >
         <Icons.Plus size={18} className="text-black" />
       </button>
@@ -52,8 +52,6 @@ const AddYourServiceModal = () => {
                 selectedKeys={selectedServices}
                 onChange={setSelectedServices}
               />
-
-              <InputField label="Location" placeholder="Enter your text" />
             </div>
           </ModalBody>
           <ModalFooter className="flex items-center justify-center ">

@@ -1,3 +1,5 @@
+"use client";
+import { useUserType } from "@/app/[user_type]/(afterlogin)/UserTypeProvider";
 import { PUBLIC_IMAGES } from "@/assets";
 import DescriptionCard from "@/components/shared/Cards/DescriptionCard";
 import LinkButton from "@/components/ui/Buttons/LinkButton";
@@ -5,6 +7,9 @@ import CardComponent from "@/components/ui/Cards/CardComponent";
 import Image from "next/image";
 
 const WorkshopCard = () => {
+  const userType = useUserType();
+
+  if (!userType) return null;
   return (
     <CardComponent className="!px-0 !py-0 border-neutral-gray bg-white gap-0">
       <CardComponent.Header>
@@ -60,7 +65,7 @@ const WorkshopCard = () => {
       </CardComponent.Body>
       <CardComponent.Footer className="!px-16 !py-9">
         <LinkButton
-          href="/workshop-details"
+          href={`/${userType}/workshop-details`}
           className="bg-transparent border border-foreground text-xs font-medium text-foreground h-8 min-w-[183px] w-[183px] "
         >
           View details

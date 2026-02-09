@@ -35,7 +35,7 @@ export const AFTER_LOGIN_HEADER_MENU = [
   },
   {
     id: "profile",
-    href: "/profile",
+    href: "/my-networks",
     icon: <Icons.ManIcon />,
   },
   {
@@ -54,9 +54,14 @@ export const AFTER_LOGIN_HEADER_MENU = [
     icon: <Icons.Bell />,
   },
   {
-    id: "media",
+    id: "workshop",
     href: "/workshops",
     icon: <Icons.MonitorPlay />,
+  },
+  {
+    id: "enquiry",
+    href: "/enquiry",
+    icon: <Icons.MessageCircleQuestionMark />,
   },
 ];
 
@@ -67,6 +72,9 @@ export const INNER_PAGE_HEADER = {
       headerText: "",
       subText: "",
     }
+  },
+  "contact-us": {
+
   },
   "features": {
     headerText: "FEATURES",

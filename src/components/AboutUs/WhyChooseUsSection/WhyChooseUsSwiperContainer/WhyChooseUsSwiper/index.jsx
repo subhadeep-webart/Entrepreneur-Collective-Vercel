@@ -15,7 +15,7 @@ export default function WhyChooseUsSwiper() {
         modules={[Pagination]}
         spaceBetween={30}
         slidesPerView={3}
-        // centeredSlides={true}
+        centeredSlides={true}
         // loop={true}
         pagination={{ clickable: true }}
         className={"why-choose-swiper"}

@@ -8,10 +8,12 @@ const ResourceArticle = () => {
         <div className="col-span-7">
           <ResourceArticleCard />
         </div>
-        <div className="col-span-5 flex flex-col gap-7">
-          <ResourceArticleSmallCard />
-          <ResourceArticleSmallCard />
-          <ResourceArticleSmallCard />
+        <div className="col-span-5">
+          <div className="flex flex-col gap-7">
+            <ResourceArticleSmallCard />
+            <ResourceArticleSmallCard />
+            <ResourceArticleSmallCard />
+          </div>
         </div>
       </div>
     </div>

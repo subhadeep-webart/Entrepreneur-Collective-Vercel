@@ -57,8 +57,8 @@ const WorkshopForm = () => {
         </h3>
         <RefundPolicyForm />
       </div>
-
-      <TicketForm />
+      
+      <TicketForm/>
       <LinkButton href="#" className="w-80 h-14 text-base font-medium !mt-12">Pay & join now</LinkButton>
 
     </div>

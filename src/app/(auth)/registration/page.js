@@ -9,7 +9,7 @@ const RegistrationPage = () => {
         <AuthPageWrapper>
             <div className="w-full container flex items-end h-[700px] gap-32">
                 <div className="w-full h-full flex items-end justify-start !pb-11">
-                    <AuthFormWrapper headerText="Let’s get you signed in">
+                    <AuthFormWrapper headerText="Create Your Space">
                         <RegisterForm />
                     </AuthFormWrapper>
                 </div>

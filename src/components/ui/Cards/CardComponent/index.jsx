@@ -2,7 +2,7 @@ import { cn } from "@heroui/react"
 
 const CardComponent = ({ children, className }) => {
     return (
-        <div className={cn("w-full bg-white border-1 border-mauve-gray min-h-36 h-full !px-6 !py-9 flex flex-col justify-start items-center gap-7", className)}>
+        <div className={cn("w-full bg-white border-1 border-mauve-gray h-auto !px-6 !py-9 flex flex-col justify-start items-center gap-7", className)}>
             {children}
         </div>
     )

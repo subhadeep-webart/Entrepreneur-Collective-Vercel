@@ -1,7 +1,11 @@
-const AreaPlaceHolder=()=>{
-    return(
-        <p className="text-ash-gray font-normal text-sm w-full text-start !pl-4">What do you want to share?</p>
-    )
-}
+"use client";
+
+const AreaPlaceHolder = ({text}) => {
+  return (
+    <p className="text-ash-gray font-normal text-sm w-full !pl-1">
+      {text}
+    </p>
+  );
+};
 
 export default AreaPlaceHolder;

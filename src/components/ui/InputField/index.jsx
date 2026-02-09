@@ -13,6 +13,7 @@ const InputField = ({
   isTime = false,
   isDate = false,
   startIcon = null,
+  endContent = null,
 }) => {
   const [showPassword, setShowPassword] = useState(false);
   const isPassword = type === "password";
@@ -68,11 +69,14 @@ const InputField = ({
       classNames={mergedClassNames}
       startContent={
         startIcon && (
-          <span className="text-[#222222] flex items-center !pl-2">{startIcon}</span>
+          <span className="text-[#222222] flex items-center !pl-2">
+            {startIcon}
+          </span>
         )
       }
       endContent={
         <>
+          {endContent}
           {isPassword && (
             <button
               type="button"

@@ -1,4 +1,3 @@
-import NavBarHamburgerMenu from "../NavBarHamburgerMenu";
 import AuthButtonGroup from "./AuthButtonGroup";
 import styles from "./header.module.css";
 import LogoContainer from "./LogoContainer";
@@ -10,7 +9,6 @@ const Header = () => {
                 <LogoContainer />
                 <NavbarContainer />
                 <AuthButtonGroup />
-                <NavBarHamburgerMenu />
             </section>
         </header>
     )

@@ -32,9 +32,9 @@
   --granite-gray: #727272;
   --jet2-gray: #272727;
   --amber: #FFB027;
-  --dim-gray-2: #575454;
-  --light-charcoal: #3D3D3D;
-  --blush-pink: #F6AEAE;
+  --dim-gray-2:#575454;
+  --light-charcoal:#3D3D3D;
+  --blush-pink:#F6AEAE;
 
   --form-text: #292929;
   --dark-slate: #474747;
@@ -64,8 +64,9 @@
   --beige: #EEEBE5;
   --medium-light-gray: #9A9A9A;
   --neutral-light-gray: #C4C4C4;
-  --gainsboro: #D9D9D9;
-  --oynx: #292929
+  --stone-gray:#8F8F8F;
+  --mid-gray:#787878;
+  --black-cherry:#110E0F;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -122,8 +123,8 @@
   --color-jet2-gray: var(--jet2-gray);
   --color-amber: var(--amber);
   --color-dim-gray-2: var(--dim-gray-2);
-  --color-light-charcoal: var(--light-charcoal);
-  --color-blush-pink: var(--blush-pink);
+  --color-light-charcoal:var(--light-charcoal);
+  --color-blush-pink:var(--blush-pink);
 
   /* All Other Color listed here */
   --color-form-text: var(--form-text);
@@ -153,9 +154,9 @@
   --color-biege: var(--biege);
   --color-medium-light-gray: var(--medium-light-gray);
   --color-neutral-light-gray: var(--neutral-light-gray);
-  --color-beige: var(--beige);
-  --color-gainsboro: var(--gainsboro);
-  --color-oynx: var(--oynx);
+  --color-stone-gray: var(--stone-gray);
+  --color-mid-gray: var(--mid-gray);
+  --color-black-cherry: var(--black-cherry);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -190,4 +191,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 28px;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE & Edge */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
 }

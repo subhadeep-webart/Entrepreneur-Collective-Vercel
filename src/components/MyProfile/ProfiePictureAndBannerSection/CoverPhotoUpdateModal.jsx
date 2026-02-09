@@ -28,12 +28,13 @@ const CoverPhotoUpdateModal = () => {
         backdrop="opaque"
         onClose={onClose}
         hideCloseButton={true}
+        scrollBehavior="inside"
       >
         <ModalContent>
           <ModalHeader className="flex flex-col gap-1 items-center justify-center text-2xl font-semibold text-foreground !pt-14">
             Cover photo
           </ModalHeader>
-          <ModalBody className="w-full">
+          <ModalBody className="w-full no-scrollbar">
             <div className="flex justify-end !mr-8 !mb-8">
             <CustomButton className="rounded-full bg-blush-pink"> <Icons.Trash2 className="text-[#000000]" size={20} /></CustomButton>
             </div>

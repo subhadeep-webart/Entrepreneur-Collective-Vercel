@@ -1,29 +1,11 @@
-/* Default (Desktop & larger screens) */
 .header {
   font-family: var(--font-bebas), sans-serif;
-  font-weight: 400;
-  /* font-normal */
+  font-weight: 400; /* font-normal */
   font-size: 74px;
   line-height: 0.98;
   color: var(--foreground);
-
   padding-left: 67px;
   padding-right: 55px;
   padding-top: 67px;
-
-  text-align: center;
-}
-
-/* Mobile only (≤480px) */
-@media (max-width: 480px) {
-  .header {
-    font-size: 36px;
-    line-height: 1.1;
-
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 24px;
-
-    text-align: center;
-  }
+   text-align: center;
 }

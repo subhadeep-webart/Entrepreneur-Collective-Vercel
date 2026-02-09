@@ -1,10 +1,10 @@
 import InnerPageSectionContentHeader from "@/components/Layout/InnerPage/InnerPageSectionContentHeader"
 
-const InnerPageSectionHeader = ({ headerText = "", subText = "", className = "", headerClassName = "" }) => {
+const InnerPageSectionHeader = ({ headerText = "", subText = "",className="" }) => {
     return (
         <div className="container">
             <InnerPageSectionContentHeader className={className}>
-                <InnerPageSectionContentHeader.HeaderText className={headerClassName}>
+                <InnerPageSectionContentHeader.HeaderText>
                     {headerText}
                 </InnerPageSectionContentHeader.HeaderText>
                 <InnerPageSectionContentHeader.SubText>

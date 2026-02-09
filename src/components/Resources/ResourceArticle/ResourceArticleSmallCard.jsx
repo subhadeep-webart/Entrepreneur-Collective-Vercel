@@ -7,10 +7,10 @@ import DescriptionCard from "@/components/shared/Cards/DescriptionCard";
 
 const ResourceArticleSmallCard = () => {
   return (
-    <CardComponent className="!px-0 !py-0 border-none bg-transparent !items-start">
+    <CardComponent className="!px-0 !py-0 border-none bg-transparent">
       <div className="flex gap-7">
         <CardComponent.Header>
-          <div className="relative w-full h-[178px] border border-neutral-gray">
+          <div className="relative w-[197px] h-[178px] border border-neutral-gray">
             <Image
               src={PUBLIC_IMAGES.ResourceImg2}
               alt=" "
@@ -32,7 +32,7 @@ const ResourceArticleSmallCard = () => {
 
           <CardComponent.Footer>
             <LinkButton
-              href="/resource-details"
+              href="#"
               className="bg-transparent border border-foreground text-sm font-medium text-foreground h-12 min-w-[185px] w-[185px] !mt-5"
             >
               View details

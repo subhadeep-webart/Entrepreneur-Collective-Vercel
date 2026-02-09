@@ -84,15 +84,14 @@ const SelectField = ({
             "min-h-[42px]",
           ],
           value: ["text-info", "text-base"],
-          popoverContent: ["rounded-none !py-4 !px-4"],
+          popoverContent: ["rounded-none !pl-2"],
           listbox: ["rounded-none"],
         }}
       >
         {options.map((item) => (
           <SelectItem
-            key={String(item.key)}
+            key={String(item.key)} 
             textValue={item.label}
-            className="!py-2 !px-2"
           >
             {item.label}
           </SelectItem>

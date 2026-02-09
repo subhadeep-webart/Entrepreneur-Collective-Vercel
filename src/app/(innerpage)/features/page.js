@@ -19,10 +19,10 @@ const FeaturesPage = () => {
             <QuestionAndAnswerSection />
             <InnerPageSectionHeader headerText="See How We Empower Entrepreneurs" subText="Watch inspiring stories, expert insights, and real success journeys from our community of innovators and leaders" />
             <div className="w-full h-[550px] relative container">
-                <Image src={PUBLIC_IMAGES?.FeaturesYoutube} className="w-full object-cover h-full relative" fill alt="image" />
+                <Image src={PUBLIC_IMAGES?.HomeAboutImg} className="w-full object-cover h-full relative" fill alt="image" />
             </div>
             <InnerPageSectionHeader headerText="The Brains Behind the Success" subText="Connect with experienced entrepreneurs, industry specialists, and thought leaders ready to guide your journey" />
-            <AddConnectionCaraousal data={[1, 2, 3, 4, 5,6,7,8,9,10]} />
+            <AddConnectionCaraousal data={[1, 2, 3, 4, 5]} />
         </>
     )
 }

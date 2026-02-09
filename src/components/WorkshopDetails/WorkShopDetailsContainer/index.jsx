@@ -10,12 +10,12 @@ const WorkshopDetailsContainer = () => {
       <h2 className="font-semibold text-lg text-almost-black !mb-9">
         Workshops
       </h2>
-       <LinkButton
-        href="/create-workshop"
+       {/* <LinkButton
+        href="#"
         className="text-base font-medium text-foreground h-11 w-[310px]"
       >
         Edit workshop
-      </LinkButton>
+      </LinkButton> */}
       </div>
       <div className="relative w-[1288px] h-[393px] border border-neutral-gray ">
         <Image

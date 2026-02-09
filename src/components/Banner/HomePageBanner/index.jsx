@@ -4,8 +4,8 @@ import LeftContainer from "./LeftContainer";
 
 const HomePageBanner = () => {
     return (
-        <BannerWrapper className="!h-[90vh] lg:!h-[637px]">
-            <LeftContainer />
+        <BannerWrapper className="!h-[637px]">
+            <LeftContainer/>
             <RightContainer />
         </BannerWrapper>
     )

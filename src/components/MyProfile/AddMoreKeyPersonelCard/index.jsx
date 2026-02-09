@@ -2,7 +2,7 @@
 import CardComponent from "@/components/ui/Cards/CardComponent";
 import AddKeyPersonnelModal from "./AddKeyPersonnelModal";
 
-const PostModal = () => {
+const AddMoreKeyPersonalCard = () => {
     return (
         <CardComponent>
             <CardComponent.Body>
@@ -12,10 +12,10 @@ const PostModal = () => {
                 </div>
             </CardComponent.Body>
             <CardComponent.Footer>
-                <AddKeyPersonnelModal />
+                <AddKeyPersonnelModal/>
             </CardComponent.Footer>
         </CardComponent>
     )
 }
 
-export default PostModal;
+export default AddMoreKeyPersonalCard;

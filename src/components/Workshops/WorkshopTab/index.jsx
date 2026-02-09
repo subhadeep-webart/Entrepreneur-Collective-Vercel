@@ -1,17 +1,21 @@
 "use client";
 
+import { useUserType } from "@/app/[user_type]/(afterlogin)/UserTypeProvider";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const WorkshopTab = () => {
   const pathname = usePathname();
+  const userType = useUserType();
+
+  if (!userType) return null;
 
   const tabs = [
-    { label: "All Workshops", href: "/workshops" },
-    { label: "My Workshops", href: "/workshops/my-workshops" },
+    { label: "All Workshops", href: `/${userType}/workshops` },
+    { label: "My Workshops", href: `/${userType}/workshops/my-workshops` },
   ];
 
-  const activeIndex = tabs.findIndex(tab => tab.href === pathname);
+  const activeIndex = tabs.findIndex((tab) => tab.href === pathname);
 
   return (
     <div className="w-fit">
@@ -28,7 +32,6 @@ const WorkshopTab = () => {
           </Link>
         ))}
 
-  
         <div
           className="absolute bottom-0 h-[3px] bg-foreground transition-transform duration-300"
           style={{

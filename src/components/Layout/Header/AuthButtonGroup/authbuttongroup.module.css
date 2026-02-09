@@ -1,14 +1,8 @@
-.auth_button_group_container {
+.auth_button_group_container{
     max-width: 300px;
     width: 100%;
-    display: none;
-    gap: 12px;
+    display: flex;
+    gap:12px;
     justify-content: flex-start;
     align-items: center;
-}
-
-@media (min-width: 1024px) {
-    .auth_button_group_container {
-        display: flex;
-    }
 }

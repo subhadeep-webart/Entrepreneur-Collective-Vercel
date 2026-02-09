@@ -1,7 +1,14 @@
-"use client"
+"use client";
 import CustomButton from "@/components/ui/Buttons/CustomButton";
 import InputField from "@/components/ui/InputField";
-import { Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, useDisclosure } from "@heroui/react";
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  useDisclosure,
+} from "@heroui/react";
 
 const AddKeyPersonnelModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,9 +34,8 @@ const AddKeyPersonnelModal = () => {
             <div className="grid grid-cols-1 gap-9">
               <InputField
                 label="Enter key personnel"
-                placeholder="Select your service"
+                placeholder="Type your key personal"
               />
-
             </div>
           </ModalBody>
           <ModalFooter className="flex items-center justify-center ">
@@ -40,7 +46,7 @@ const AddKeyPersonnelModal = () => {
         </ModalContent>
       </Modal>
     </>
-  )
+  );
 };
 
 export default AddKeyPersonnelModal;

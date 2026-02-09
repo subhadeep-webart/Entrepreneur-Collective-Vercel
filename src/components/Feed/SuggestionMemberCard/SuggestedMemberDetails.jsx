@@ -1,6 +1,5 @@
 "use client"
 
-import { Icons } from "@/assets";
 import CustomButton from "@/components/ui/Buttons/CustomButton";
 import { Avatar } from "@heroui/react";
 

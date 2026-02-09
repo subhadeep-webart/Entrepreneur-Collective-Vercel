@@ -26,7 +26,7 @@ const AddPersonalDetailsModal = () => {
   return (
     <>
       <CustomButton className="text-sm w-40" clickHandler={onOpen}>
-        Add profile section
+       Add profile section
       </CustomButton>
 
       <Modal
@@ -40,12 +40,12 @@ const AddPersonalDetailsModal = () => {
       >
         <ModalContent className="!py-14 !px-12">
           <ModalHeader className="flex flex-col gap-1 items-center justify-center text-2xl font-semibold text-foreground ">
-            Add personal details
+           Add Organization details
           </ModalHeader>
-          <ModalBody className="w-full !pt-8 !pb-16">
+          <ModalBody className="w-full !pt-8 !pb-16 no-scrollbar">
             <div className="grid grid-cols-1 gap-9">
               <InputField
-                label="Your name / Organization name"
+                label="Organization name"
                 placeholder="Enter your text"
               />
               <SelectField
@@ -64,7 +64,7 @@ const AddPersonalDetailsModal = () => {
               <TextareaField label="About" placeholder="Enter your text" />
             </div>
           </ModalBody>
-          <ModalFooter className="flex items-center justify-center ">
+          <ModalFooter className="flex items-center justify-center !pt-4">
             <CustomButton className="text-sm w-48 h-12" clickHandler={onClose}>
               Save
             </CustomButton>
