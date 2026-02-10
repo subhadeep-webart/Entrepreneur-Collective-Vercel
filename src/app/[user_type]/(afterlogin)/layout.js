@@ -3,7 +3,8 @@ import Footer from "@/components/Layout/Footer";
 import AfterLoginHeader from "@/components/Layout/AfterLogin/Header";
 import { notFound } from "next/navigation";
 import { getUserType } from "@/utils/lib/usertype";
-import { UserTypeProvider } from "./UserTypeProvider.jsx";
+import { UserTypeProvider } from "./UserTypeProvider";
+
 
 export const metadata = {
   title: "Entrepreneur Collective",

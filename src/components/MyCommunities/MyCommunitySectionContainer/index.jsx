@@ -4,6 +4,7 @@ import CommunityCard from "@/components/shared/Cards/CommunityCard";
 import ConnectionCard from "@/components/shared/Cards/ConnectionCard";
 import SectionHeader from "@/components/shared/Section/SectionHeader";
 import CreateCommunityModal from "@/components/ui/Modals/component/CreateCommunityModal";
+import SelectCommunityFilter from "./SelectCommunityFilter";
 
 const MyCommunitySectionContainer = ({ headerText = "My community" }) => {
     return (
@@ -12,8 +13,9 @@ const MyCommunitySectionContainer = ({ headerText = "My community" }) => {
                 <SectionHeader.LeftContainer>
                     {headerText}
                 </SectionHeader.LeftContainer>
-                <SectionHeader.RightContainer>
+                <SectionHeader.RightContainer className="gap-2">
                     {/* <CreateCommunityButton /> */}
+                    <SelectCommunityFilter/>
                     <CreateCommunityModal/>
                 </SectionHeader.RightContainer>
             </SectionHeader>

@@ -5,11 +5,10 @@ import { Dropdown, DropdownTrigger, DropdownItem, DropdownMenu } from "@heroui/r
 import { Icons } from "@/assets";
 
 const options = [
-  { key: "sent", label: "Sent connection requests" },
-  { key: "pending", label: "Pending connection requests" },
+  { key: "sent", label: "Sent group requests" },
 ];
 
-const SelectNetworkFilter = () => {
+const SelectCommunityFilter = () => {
   const [selected, setSelected] = useState(null);
 
   return (
@@ -35,6 +34,6 @@ const SelectNetworkFilter = () => {
   );
 };
 
-export default SelectNetworkFilter;
+export default SelectCommunityFilter;
 
 

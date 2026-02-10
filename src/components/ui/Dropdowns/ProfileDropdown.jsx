@@ -60,9 +60,8 @@ const ProfileDropdown = () => {
           classNames={{
             base: "!py-4 !rounded-none !px-2",
           }}
-          // onClick={handleSignOut}
         >
-          Sign Out
+          <button onClick={handleSignOut}>Sign Out</button> 
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>

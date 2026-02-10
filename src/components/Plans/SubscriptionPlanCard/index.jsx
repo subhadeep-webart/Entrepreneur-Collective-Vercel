@@ -1,11 +1,13 @@
+"use client"
+import { useUserType } from "@/app/[user_type]/(afterlogin)/UserTypeProvider";
 import { Icons } from "@/assets";
-import CustomButton from "@/components/ui/Buttons/CustomButton";
 import LinkButton from "@/components/ui/Buttons/LinkButton";
 import CardComponent from "@/components/ui/Cards/CardComponent";
 import { cn } from "@heroui/react";
 
 const SubscriptionPlanCard = ({ planDetails }) => {
     console.log("Plan Details========>", planDetails);
+    const userType = useUserType();
     return (
         <CardComponent className={"!py-0 !px-0"}>
             <CardComponent.Header className={cn("text-[22px] text-white font-semibold flex justify-center items-center !py-5 uppercase", planDetails?.isPremium ? "bg-bright-orange" : "bg-coral-red")}>
@@ -28,7 +30,7 @@ const SubscriptionPlanCard = ({ planDetails }) => {
                     <p className="text-smoky-black text-lg font-medium">Price</p>
                     <h3 className="text-[32px] font-bold text-smoky-black">$ {planDetails?.price}</h3>
                 </div>
-                <LinkButton className="w-48" href={"/thank-you"}>
+                <LinkButton className="w-48" href={`/${userType}/thank-you`}>
                     Upgrade now
                 </LinkButton>
             </CardComponent.Footer>

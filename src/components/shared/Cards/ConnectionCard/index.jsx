@@ -3,6 +3,7 @@
 import CardComponent from "@/components/ui/Cards/CardComponent";
 import AddConnectionButton from "../../Buttons/AddConnectionButtton";
 import { Avatar } from "@heroui/react";
+import RemoveconnectionModal from "@/components/ui/Modals/component/RemoveConnectionModal";
 
 const ConnectionCard = () => {
     return (
@@ -16,6 +17,7 @@ const ConnectionCard = () => {
             </CardComponent.Body>
             <CardComponent.Footer className={"flex justify-center"}>
                 <AddConnectionButton />
+                {/* <RemoveconnectionModal/> */}
             </CardComponent.Footer>
         </CardComponent>
     )

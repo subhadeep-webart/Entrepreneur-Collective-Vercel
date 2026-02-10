@@ -1,21 +1,32 @@
-import LinkButton from "@/components/ui/Buttons/LinkButton";
+"use client";
+import CustomButton from "@/components/ui/Buttons/CustomButton";
+import { useRouter } from "next/navigation";
+
+const USER_TYPE_KEY = "ec_user_type";
 
 const ButtonGroup = () => {
+     const router = useRouter();
+    
+       const handleRegister = (type) => {
+        localStorage.setItem(USER_TYPE_KEY, type);
+        router.push("/registration");
+      };
+    
     return (
         <>
-            <LinkButton
-                href="/login"
+            <CustomButton
+               clickHandler={() => handleRegister("business")}
                 className="w-48 h-14 font-medium text-sm text-foreground"
             >
-                Login as business owner
-            </LinkButton>
+              Register as business
+            </CustomButton>
 
-            <LinkButton
-                href="/login"
-                className="w-36 h-14 border border-dark-gray bg-transparent font-medium text-sm text-foreground"
+            <CustomButton
+                clickHandler={() => handleRegister("freelancer")}
+                className="w-48 h-14 border border-dark-gray bg-transparent font-medium text-sm text-foreground"
             >
-                Login as expert
-            </LinkButton>
+              Register as Freelancer
+            </CustomButton>
         </>
     )
 }

@@ -6,6 +6,7 @@ import JoinGroupButton from "../../Buttons/JoinGroupButton";
 import CommunityDetails from "./CommunityDetails";
 import Link from "next/link";
 import { useUserType } from "@/app/[user_type]/(afterlogin)/UserTypeProvider";
+import LeaveGroupModal from "@/components/ui/Modals/component/LeaveGroupModal";
 
 const CommunityCard = () => {
   const userType = useUserType();
@@ -13,8 +14,8 @@ const CommunityCard = () => {
   if (!userType) return null;
 
   return (
-    <Link href={`/${userType}/community-details`}>
-      <CardComponent>
+    <CardComponent>
+      <Link href={`/${userType}/community-details`}>
         <CardComponent.Body className={"flex items-start flex-col gap-4"}>
           <CommunityDetails />
           <AvatarGroup
@@ -54,11 +55,12 @@ const CommunityCard = () => {
             />
           </AvatarGroup>
         </CardComponent.Body>
-        <CardComponent.Footer>
-          <JoinGroupButton />
-        </CardComponent.Footer>
-      </CardComponent>
-    </Link>
+      </Link>
+      <CardComponent.Footer>
+        <JoinGroupButton />
+        {/* <LeaveGroupModal /> */}
+      </CardComponent.Footer>
+    </CardComponent>
   );
 };
 

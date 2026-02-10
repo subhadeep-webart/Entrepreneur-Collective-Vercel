@@ -6,8 +6,8 @@ const AuthButtonGroup = () => {
     return (
         <div className={styles.auth_button_group_container}>
             <LoginButton />
-            <RegisterButton />
-            <SearchButton/>
+            {/* <RegisterButton /> */}
+            {/* <SearchButton/> */}
         </div>
     )
 }
